@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=UTF-8>
+        <title>Visualizing Tech Salaries</title>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="sidebar">
+            <div id="sidebar-content">
+                <h2 class="title">Visualizing Tech Salaries</h2>
+                <p class="label">Map Info:</p>
+                <label for="map-info-selector"></label>
+                <select id="map-info-selector">
+                    <option value="record">Records</option>
+                    <option value="salary">Average Salary</option>
+                </select>
+                <p class="label">Roles:</p>
+                <ul id="job-legend">
+                    <li class="legend-btn" data-category="Software Engineer">
+                        <span class="legend-symbol"></span>
+                        Software Engineer
+                    </li>
+                    <li class="legend-btn" data-category="Product Manager">
+                        <span class="legend-symbol"></span>
+                        Product Manager
+                    </li>
+                    <li class="legend-btn" data-category="Software Engineering Manager">
+                        <span class="legend-symbol"></span>
+                        Software Engineering Manager
+                    </li>
+                    <li class="legend-btn" data-category="Data Scientist">
+                        <span class="legend-symbol"></span>
+                        Data Scientist
+                    </li>
+                    <li class="legend-btn" data-category="Hardware Engineer">
+                        <span class="legend-symbol"></span>
+                        Hardware Engineer
+                    </li>
+                    <li class="legend-btn" data-category="Solution Architect">
+                        <span class="legend-symbol"></span>
+                        Solution Architect
+                    </li>
+                    <li class="legend-btn" data-category="Product Designer">
+                        <span class="legend-symbol"></span>
+                        Product Designer
+                    </li>
+                    <li class="legend-btn" data-category="Technical Program Manager">
+                        <span class="legend-symbol"></span>
+                        Technical Program Manager
+                    </li>
+                    <li class="legend-btn" data-category="Management Consultant">
+                        <span class="legend-symbol"></span>
+                        Management Consultant
+                    </li>
+                    <li class="legend-btn" data-category="Business Analyst">
+                        <span class="legend-symbol"></span>
+                        Business Analyst
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="vis">
+            <div>
+                <svg id="choropleth-map"></svg>
+                <svg id="bar-chart"></svg>
+            </div>
+            <div>
+                <svg id="base-salary-histogram"></svg>
+                <svg id="years-of-experience-histogram"></svg>
+                <svg id="years-at-company-histogram"></svg>
+            </div>
+        </div>
+        <div id="tooltip"></div>
+        <script src=main.js></script>
+    </body>
+</html>
